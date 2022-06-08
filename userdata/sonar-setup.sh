@@ -35,7 +35,7 @@ systemctl restart  postgresql
 #systemctl status -l   postgresql
 netstat -tulpena | grep postgres
 sudo mkdir -p /sonarqube/
-cd /sonarqube/
+cd /sonarqube/ || exit
 sudo curl -O https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-8.3.0.34182.zip
 sudo apt-get install zip -y
 sudo unzip -o sonarqube-8.3.0.34182.zip -d /opt/
