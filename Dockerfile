@@ -1,0 +1,2 @@
+COPY . .
+RUN ./survey.sh
