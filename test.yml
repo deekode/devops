@@ -31,12 +31,12 @@ jobs:
 
       - name: Run survery script
         run: bash ./survey.sh -y
-        
-
+      
       # Runs a set of commands using the runners shell
-      - name: Build and push docker Image
-        env:
-        DOCKER_USER: ${{ secrets.DOCKER_USERNAME }}
-        DOCKER_PASS: ${{ secrets.DOCKER_PASSWORD }}
-        run: deploy.sh
+
+    - name: Build and push docker Image
+      env:
+      DOCKER_USER: ${{ secrets.DOCKER_USERNAME }}
+      DOCKER_PASS: ${{ secrets.DOCKER_PASSWORD }}
+      run: deploy.sh
       
