@@ -1,3 +1,4 @@
 COPY . /usr/app
 WORKDIR /usr/app
-RUN ./survey.sh
+RUN pwd
+RUN ./survey.sh -y
